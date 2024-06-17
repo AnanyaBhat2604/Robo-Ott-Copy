@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .auth-bg {
+        @apply bg-auth-pattern relative before:bg-auth-gradient before:absolute before:inset-0 h-screen z-0 max-md:before:!bg-auth-gradient-mobile;
+    }
+
+    .custom-card {
+        @apply bg-outer-space p-normal rounded-normal border-normal border-dove-gray max-sm:!bg-transparent max-sm:border-none max-sm:p-mobile;
+    }
+
+    .center-div {
+        @apply flex items-center justify-center;
+    }
+
+    .error-text {
+        @apply text-cinnabar text-xs leading-normal pt-[6px];
+    }
+
+    .custom-swiper-styles .swiper-button-next {
+        margin-right: 20px;
+    }
+
+    .custom-swiper-styles .swiper-button-prev {
+        margin-left: 20px;
+    }
+
+    .custom-swiper-styles .swiper-button-disabled {
+        visibility: hidden;
+    }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.scrollbar-custom {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  display: none;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: theme("colors.dove-gray");
+  border-radius: 4px;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+  background-color: theme("colors.dodger-blue");
+  transform: scale(1.1);
+}
