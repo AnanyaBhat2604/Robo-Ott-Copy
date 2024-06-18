@@ -19,9 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-black">
         <Providers>
-<Header />
+          <Header />
           {children}
-        
+          <FooterBlock />
         </Providers>
       </body>
     </html>
