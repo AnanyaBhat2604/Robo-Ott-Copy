@@ -1,7 +1,7 @@
 export const URL = {
-  GET_MENU: "/api/menus?populate=deep",
-  GET_Home_Data: "/api/pages/dashboard1?populate=deep",
-  GET_FOOTER: "/api/footers?populate=deep",
+  GET_MENU: "",
+  GET_Home_Data: "",
+  GET_FOOTER: "",
 
   sendOTP: "api/v1/user/sendOTP",
   emailLogin: "api/v1/user/login",

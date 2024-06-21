@@ -17,12 +17,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-black">
-        <Providers>
-          <Header />
-          {children}
-          <FooterBlock />
-        </Providers>
+      <body className="">
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
