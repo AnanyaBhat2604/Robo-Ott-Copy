@@ -1,7 +1,7 @@
 export const URL = {
-  GET_MENU: "",
-  GET_Home_Data: "",
-  GET_FOOTER: "",
+  GET_MENU: "/api/menu",
+  GET_Home_Data: "/api/home",
+  GET_FOOTER: "/api/footer",
 
   sendOTP: "api/v1/user/sendOTP",
   emailLogin: "api/v1/user/login",

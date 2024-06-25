@@ -3,8 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Footer = ({ data }: any) => {
-  console.log(data);
-  const src = `${process.env.NEXT_PUBLIC_API_BASE_URL}${data?.logo?.formats?.small?.url}`;
+  const src = `${data?.logo?.formats?.small?.url}`;
   return (
     <div className=" text-white py-8 flex items-center flex-col gap-[12px] pt-[150px]">
       <div>
